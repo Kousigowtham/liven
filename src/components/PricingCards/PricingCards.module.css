@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  padding: 12px 8px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-around;
+  position: relative;
+}
+
+.cardLink:link {
+  text-decoration: none;
+  color: black;
+}
+
+.cardLink:visited {
+  text-decoration: none;
+  color: black;
+}
+.cardLink:hover {
+  text-decoration: none;
+}
+.cardLink:active {
+  text-decoration: none;
+}
+.container:hover {
+  background-color: aliceblue;
+}
+.exclusive {
+  position: absolute;
+  background-color: var(--primary-color);
+  padding: 4px 8px;
+  border-radius: 100vw;
+  color: white;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  top: -15px;
+}
+.buySection,
+.bonusSection {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.bonusSection {
+  color: #00c9b7;
+}
+.buySection span:first-child,
+.bonusSection span:first-child {
+  margin-bottom: -12px;
+  text-decoration: none;
+}
+.buySection span:nth-child(2),
+.bonusSection span:nth-child(2) {
+  font-size: min(2.5rem, 10vw);
+  text-decoration: none;
+}
